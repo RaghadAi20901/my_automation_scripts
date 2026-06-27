@@ -1,0 +1,17 @@
+# Commands to inspect hardware and interconnections on macOS
+
+# 1. CPU & Memory Info
+system_profiler SPHardwareDataType
+# ➝ Shows details about your Mac's CPU (model, cores, threads) and memory (RAM size, type).
+
+# 2. Graphics/Memory Interconnect
+system_profiler SPDisplaysDataType
+# ➝ Shows information about your GPU(s), how much VRAM they have, and whether they use unified or dedicated memory.
+
+# 3. Network Interfaces
+system_profiler SPNetworkDataType
+# ➝ Lists all network interfaces (Wi-Fi, Ethernet, Bluetooth, etc.), their configuration, and interconnection type.
+
+# 4. PCI Devices (Internal Bus Connections)
+system_profiler SPPCIDataType
+# ➝ Displays devices connected via PCI Express (e.g., GPUs, SSDs, network cards), showing how components interconnect with CPU.
